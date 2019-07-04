@@ -9,7 +9,7 @@ import './index.css';
 const Person = ({img, name, job, children}) => {
     const url = `https://randomuser.me/api/portraits/thumb/men/${img}.jpg`;
     return (
-        <article>
+        <article className="person">
             <img src={url}  alt="person" />
             <h4> {name} </h4>
             <h4> {job} </h4>
@@ -22,10 +22,10 @@ const Person = ({img, name, job, children}) => {
 
 const PersonList = () =>{
     return (
-        <section>
+        <section className="person-list">
             <Person  img="34" name="john" job=" developer" />
             <Person  img="3" name="bob" job=" designer">
-                <p>Lemon drops lemon drops dessert danish tootsie roll powder tiramisu toffee candy. Topping cheesecake gummi bears chupa chups macaroon. Topping wafer bonbon donut. Jelly wafer cake topping tootsie roll.</p>
+                <p>Lemon drops lemon drops dessert danish tootsie roll powder tiramisu toffee candy. Topping cheesecake gummi bears chupa chups macaroon. Topping wafer bonbon donut.</p>
             </Person>
             <Person  img="62" name="david" job=" the boss" />
         </section>
