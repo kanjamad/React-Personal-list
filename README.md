@@ -1,4 +1,7 @@
 # React Personal List
+* Used CSS
+* Image will dealing with random user generated
+* Personals list would have some kind of name, image, job, some a bit infomation
 
 
 
